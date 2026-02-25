@@ -30,7 +30,7 @@ public class Flywheel implements Subsystem {
     public void periodic() {
         switch (mode) {
             case OFF:
-                Flywheel.INSTANCE.setPIDFVelocityCustom(Parts.flywheel, 0, 0, 0,0);
+                Flywheel.INSTANCE.setPIDFVelocityCustom(Parts.flywheel, 0, 0, 0, 0);
                 break;
             case ON:
                 Flywheel.INSTANCE.setPIDFVelocityCustom(Parts.flywheel, 530, 0.015, 0.000004, 0.0006);
@@ -43,3 +43,4 @@ public class Flywheel implements Subsystem {
     }
 
 }
+
