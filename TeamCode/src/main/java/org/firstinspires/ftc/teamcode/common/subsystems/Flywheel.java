@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.common.subsystems;
 import dev.nextftc.core.subsystems.Subsystem;
 import dev.nextftc.hardware.impl.MotorEx;
 
-import org.firstinspires.ftc.teamcode.common.Parts ;
+import org.firstinspires.ftc.teamcode.common.Parts;
 
 public class Flywheel implements Subsystem {
     public static final Flywheel INSTANCE = new Flywheel();
@@ -41,4 +41,5 @@ public class Flywheel implements Subsystem {
 
         }
     }
+
 }
