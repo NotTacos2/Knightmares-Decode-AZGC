@@ -17,7 +17,7 @@ public class Flywheel implements Subsystem {
     public static ShooterMode mode = ShooterMode.OFF;
     
     public void setPIDVelocityCustom(MotorEx Motor, double velocityTarget, double kP, double kI, double kD) {
-        // credits to metal masters for these equations
+        // credits to Davis Luxenberg for these equations
         double kPEquation = (kP * (velocityTarget - Motor.getVelocity()));
         double kIEquation = (kI * velocityTarget);
         double kDEquation = (kD * Math.signum(velocityTarget));
@@ -44,5 +44,6 @@ public class Flywheel implements Subsystem {
     }
 
 }
+
 
 
